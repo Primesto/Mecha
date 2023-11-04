@@ -1,0 +1,17 @@
+import discord
+from discord.ext import commands
+
+# Define your bot and set the prefix
+bot = commands.Bot(command_prefix='/', intents=discord.Intents.default())
+
+@bot.event
+async def on_ready():
+    print(f'Logged in as {bot.user.name}')
+
+@bot.command(name='say', help='Repeat what you say')
+async def say(ctx, *, message):
+    # Send the message provided by the user
+    await ctx.send(message)
+
+# Run your bot with your token
+bot.run('MTE2Nzk2NTY5MzQyNjI3MDI2OA.GlXcDv.SSNEbYzBwqEU52In-STQcBpQA14xiTOPtwhs38')
