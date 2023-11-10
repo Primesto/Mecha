@@ -13,5 +13,4 @@ async def say(ctx, *, message):
     # Send the message provided by the user
     await ctx.send(message)
 
-# Run your bot with your token
-bot.run('')
+bot.run('MTE3MTU4MDgwNDA2NTkyMzA3Mg.GyzBL7.JFR0qgUyqoiYTSRvvGaq8t1IKO89yAChsdiY8w')
